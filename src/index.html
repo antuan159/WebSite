@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__div">
+          <div class="header__logo">
+            <a href="#">
+              <picture>
+                <source
+                  srcset="images/logo-mobile.png"
+                  media="(max-width: 767px)"
+                />
+                <img src="images/logo-dt.png" alt="logo" />
+              </picture>
+            </a>
+          </div>
+          <div class="menu">
+            <button class="menu__button" type="button">
+              <img src="images/Frame.png" alt="frame" />
+            </button>
+          </div>
+
+          <div class="buttonGrup">
+            <button type="button" class="buttonGrup__button">
+              Сотруднечество
+            </button>
+            <button type="button" class="buttonGrup__button">
+              Вход
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container background">
+        <div class="body">
+          <p class="body__title">
+            сохраните свое время для приятных дел,
+            <br />а оценку имущества доверьте профессионалам
+          </p>
+          <p class="body__subtitle">
+            Выбирайте услугу и оформляйте заявку в несколь кликов
+          </p>
+          <div class="select empty"  id="service">
+            <p class="select__type select__after">Выберите тип услуги</p>
+          </div>
+
+          <div class="select empty invisible"  id="subCategory">
+            <p class="select__type select__after">Выберите подраздел услуги</p>
+          </div>
+
+          <div class="select empty invisible"  id="category">
+            <p class="select__type select__after">Выберите категорию</p>
+          </div>        
+        </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="phoneBlock">
+          <div class="container">
+            <p class="phoneBlock__call">ПОзвонить нам</p>
+            <p class="phoneBlock__phone">
+              <a href="tel:+38 044 111-22-33" class="link">
+                +38 044 111-22-33
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="emailBlock">
+          <div class="container">
+            <p class="emailBlock__message">написать нам</p>
+            <p class="emailBlock__email">
+              <a href="mailto:rm@simbioz.ua" class="link">
+                crm@simbioz.ua
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container copyright__text">
+          <p class="copyright__symbioz">&copy; Simbioz.ua, 2020</p>
+          <p class="copyright__politic">
+            <a href="#" class="link">
+              Политика конфиденциальности
+            </a>
+          </p>
+          <p class="copyright__conditions">
+            <a href="#" class="link">
+              Условия использования
+            </a>
+          </p>
+          <p class="copyright__language">
+            <a href="#" class="link">
+              Українська
+            </a>
+          </p>
+        </div>
+    </footer>
+
+    <script src="js/function.js"></script>
+  </body>
+</html>

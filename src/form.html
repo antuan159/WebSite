@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__div">
+          <div class="header__logo">
+            <a href="#">
+              <picture>
+                <source
+                  srcset="images/logo-mobile.png"
+                  media="(max-width: 767px)"
+                />
+                <img src="images/logo-dt.png" alt="logo" />
+              </picture>
+            </a>
+          </div>
+          <div class="menu">
+            <button class="menu__button" type="button">
+              <img src="images/Frame.png" alt="frame" />
+            </button>
+          </div>
+
+          <div class="buttonGrup">
+            <button type="button" class="buttonGrup__button">
+              Сотруднечество
+            </button>
+            <button type="button" class="buttonGrup__button">
+              Вход
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>      
+      <div class="modal visible" >
+        <div class="modal__container">
+          <div class="head">
+            <p class="head__text">Уведомление</p>
+            <button type="button" class="head__button" onclick="return close_modal();">&#215;</button>
+          </div>
+          <div class='modal__text'>Вы не заполнили обязательные поля</div>
+          <div class='ok'>
+            <button type="button" class='ok__button' onclick="return close_modal();">
+              ОК
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <form class="form" onsubmit="return validate_form(event);">
+          <div class="info">
+            <p class="details">Детали заказа:</p>  
+            
+            <div class="title">
+              <p class="title__label">Название услуги:</p>
+              <p class="title__text"></p>
+            </div>  
+
+            <div class="description">
+              <label class="description__label">Опишите что необходимо сделать:</label>
+              <textarea class="description__text" rows="5" cols="40" name="description"></textarea>
+            </div>   
+
+            <label for="file" class="add">&#43; Добавить изображение
+              <input type="file" id="file" name="file" accept="image/*" style='display:none;'>
+            </label>
+          </div>
+
+          <p class="line"></p>
+
+          <div class="info">
+            <p class="contacts">Контактные данные:</p>  
+
+            <div class="name">
+              <label for="text" class="name__label">Ваше имя, фамилия*</label>
+              <input type="text" id="text" name="name"  class="name__input">
+            </div>
+          
+            <div class="email">
+              <label for="text" class="email__label">Ваше Email*</label>
+              <input type="text" id="text" name="email" class="email__input">
+            </div>
+
+            <div class="phone">
+              <label for="text" class="phone__label">Ваш номер телефона*</label>
+              <input type="text" id="text" name="phone" class="phone__input">
+            </div>
+            <div class="button__submit">
+              <button type="submit" value="Save" class="form__button">Отправить заявку</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <div class="view">
+        <p class="view__title"></p>
+        <p class="view__description"></p>
+        <img class="view__img invisible">
+        <p class="view__name"></p>
+        <p class="view__email"></p>
+        <p class="view__phone"></p>        
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="phoneBlock">
+          <div class="container">
+            <p class="phoneBlock__call">ПОзвонить нам</p>
+            <p class="phoneBlock__phone">
+              <a href="tel:+38 044 111-22-33" class="link">
+                +38 044 111-22-33
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="emailBlock">
+          <div class="container">
+            <p class="emailBlock__message">написать нам</p>
+            <p class="emailBlock__email">
+              <a href="mailto:rm@simbioz.ua" class="link">
+                crm@simbioz.ua
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container copyright__text">
+          <p class="copyright__symbioz">&copy; Simbioz.ua, 2020</p>
+          <p class="copyright__politic">
+            <a href="#" class="link">
+              Политика конфиденциальности
+            </a>
+          </p>
+          <p class="copyright__conditions">
+            <a href="#" class="link">
+              Условия использования
+            </a>
+          </p>
+          <p class="copyright__language">
+            <a href="#" class="link">
+              Українська
+            </a>
+          </p>
+        </div>
+    </footer>
+    <script src="js/function.js"></script>
+  </body>
+</html>
