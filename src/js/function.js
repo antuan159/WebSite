@@ -200,6 +200,7 @@ function createList(array, parent) {
 
 function initializeSelect(element, data) {
   element.classList.remove('invisible');
+
   element.clickHandler = () => {
     closeSelect(element);
     createList(data, element);
